@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 
 .App-logo {
@@ -35,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+input {
+  width: 65%;
+  margin: 50px;
 }
