@@ -1,15 +1,23 @@
 import React from 'react'
 
-const RecipesComponent = () => {
+//deconstruct 
+
+
+const Recipes = ({ title, calories, image, ingredients }) => {
+
+
     return (
-        <div style={{ border: 'solid black 1px' }}>
-            <img src="#" alt="#" />
-            <h1>Title</h1>
-            <p className="calories">Cals</p>
-            <p className="diet-labels">Low Carb</p>
-            <p className="ingredients">Chicken</p>
+        <div style={{ border: 'solid black 1px', margin: 10 }}>
+            <h1>{title}</h1>
+            <img src={image} alt="#" />
+            <p className="calories">{Math.round(calories)} Calories</p>
+            <ul className="ingredients">
+                {ingredients.map(ingredient => (
+                    <li>{ingredient}</li>
+                ))}
+            </ul>
         </div>
     )
 }
 
-export default RecipesComponent
+export default Recipes
