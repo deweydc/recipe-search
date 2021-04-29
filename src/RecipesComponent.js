@@ -6,16 +6,16 @@ const Recipes = ({ title, calories, image, ingredients }) => {
 
 
     return (
-        <div className={style.recipe}>
+        <div className={style.container}>
             <div className={style.header}>
                 <h1>{title}</h1>
                 <p className="calories">{Math.round(calories)} Calories</p>
             </div>
-            <div>
+            <div className={style.recipe}>
                 <img src={image} alt="#" />
                 <ul className={style.li}>
                     {ingredients.map(ingredient => (
-                        <li>{ingredient}</li>
+                        <li>- {ingredient}</li>
                     ))}
                 </ul>
             </div>

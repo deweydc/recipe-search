@@ -1,18 +1,47 @@
-
+* {
+    /* border: 1px solid black; */
+}
+h1{
+    align-items: center;
+}
 
 li {
     list-style: none;
 }
 
+ul {
+    text-align: center;
+    width: 400px;
+}
+
+p {
+    text-align: center;
+    align-items: center;
+}
+img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    border-radius: 10px;
+
+    margin: 35px;
 }
 
 .recipe {
-    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px;
+}
 
-
+.container {
+    max-width: 100%;
+    margin: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(77, 77, 77, 0.514);
+    box-shadow: -10px 10px 10px rgba(22, 22, 22, 0.26);
 }

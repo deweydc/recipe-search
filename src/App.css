@@ -1,6 +1,13 @@
+/* * {
+  border: 1px solid black;
+} */
+
 .App {
   text-align: center;
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  /* background-image: linear-gradient(to right, #7b00ff7c 0%, #ff880086 100%); */
+  background-color:  rgb(215, 223, 255);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -40,5 +47,20 @@
 
 input {
   width: 65%;
+  height: 20px;
   margin: 50px;
 }
+
+.search-btn {
+  padding: 12px 40px;
+  text-align: center;
+  border-radius: 15px; 
+}
+
+.search-bar {
+  padding: 10px;
+  border-radius: 15px; 
+  font-size: 18px;
+}
+
+

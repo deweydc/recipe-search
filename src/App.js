@@ -16,12 +16,12 @@ const App = () => {
   const [query, setQuery] = useState('chicken')
 
 
-
   //use effect is a function that runs when a num of times in this case on load it will run once (, []) = only run once
   useEffect(() => {
     // outside async function to Request recipes
     getRecipes();
   }, [query]);
+  //? runs once when query is run
 
   // GET REQUEST
   const API_REQ = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
@@ -62,6 +62,7 @@ const App = () => {
           type="text"
           value={search}
           onChange={updateSearch}
+          placeholder='Search for foods to cook...'
         />
         <button
           className='search-btn' type='submit'>
